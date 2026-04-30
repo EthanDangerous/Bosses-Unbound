@@ -1,13 +1,10 @@
 package com.unbound;
 
 import com.mojang.logging.LogUtils;
-import com.unbound.entities.ModEntities;
-import com.unbound.entities.client.GoblinKingRenderer;
-import com.unbound.entities.client.GoblinRenderer;
-import com.unbound.event.ModEventBusEvents;
-import com.unbound.items.ModItems;
+import com.unbound.registry.ModEntities;
+import com.unbound.renderers.GoblinKingRenderer;
+import com.unbound.registry.ModItems;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -26,7 +23,6 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
-import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
@@ -43,8 +39,8 @@ import com.unbound.entities.client.GoblinKingModel;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
-@Mod(bossesunbound.MODID)
-public class bossesunbound {
+@Mod(BossesUnbound.MODID)
+public class BossesUnbound {
     // Define mod id in a common place for everything to reference
     public static final String MODID = "bossesunbound";
     // Directly reference a slf4j logger
@@ -75,7 +71,7 @@ public class bossesunbound {
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
-    public bossesunbound(IEventBus modEventBus, ModContainer modContainer) {
+    public BossesUnbound(IEventBus modEventBus, ModContainer modContainer) {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 

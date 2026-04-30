@@ -3,7 +3,7 @@
 //import com.mojang.blaze3d.vertex.PoseStack;
 //import com.mojang.blaze3d.vertex.VertexConsumer;
 //import com.unbound.bossesunbound;
-//import com.unbound.entities.custom.GoblinEntity;
+//import com.unbound.entities.GoblinEntity;
 //import net.minecraft.client.model.ArmedModel;
 //import net.minecraft.client.model.EntityModel;
 //import net.minecraft.client.model.HierarchicalModel;

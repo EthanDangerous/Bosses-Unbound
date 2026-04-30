@@ -1,22 +1,17 @@
 package com.unbound.event;
 
-import com.cmdpro.databank.registry.EntityRegistry;
-import com.unbound.bossesunbound;
-import com.unbound.entities.ModEntities;
-import com.unbound.entities.client.GoblinKingModel;
-import com.unbound.entities.client.GoblinRenderer;
-import com.unbound.entities.custom.GoblinEntity;
-import com.unbound.entities.custom.GoblinKingEntity;
+import com.unbound.BossesUnbound;
+import com.unbound.registry.ModEntities;
+import com.unbound.renderers.GoblinRenderer;
+import com.unbound.entities.GoblinEntity;
+import com.unbound.entities.GoblinKingEntity;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
-import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.IEventBus;
 
-@EventBusSubscriber(modid = bossesunbound.MODID)
+@EventBusSubscriber(modid = BossesUnbound.MODID)
 public class ModEventBusEvents {
     @SubscribeEvent
     public static void registerLayers(FMLClientSetupEvent event) {

@@ -1,18 +1,13 @@
-package com.unbound.entities.client;
+package com.unbound.renderers;
 
-import com.google.common.collect.Maps;
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.unbound.bossesunbound;
-import com.unbound.entities.GoblinVariant;
-import com.unbound.entities.custom.GoblinEntity;
-import com.unbound.entities.custom.GoblinKingEntity;
-import net.minecraft.Util;
+import com.unbound.BossesUnbound;
+import com.unbound.entities.GoblinKingEntity;
+import com.unbound.entities.client.GoblinKingModel;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.resources.ResourceLocation;
-
-import java.util.Map;
 
 public class GoblinKingRenderer extends MobRenderer<GoblinKingEntity, GoblinKingModel<GoblinKingEntity>> {
 
@@ -22,7 +17,7 @@ public class GoblinKingRenderer extends MobRenderer<GoblinKingEntity, GoblinKing
 
     @Override
     public ResourceLocation getTextureLocation(GoblinKingEntity goblinKingEntity) {
-        return ResourceLocation.fromNamespaceAndPath(bossesunbound.MODID, "textures/entity/goblin_king/goblin_king.png");
+        return ResourceLocation.fromNamespaceAndPath(BossesUnbound.MODID, "textures/entity/goblin_king/goblin_king.png");
     }
 
 

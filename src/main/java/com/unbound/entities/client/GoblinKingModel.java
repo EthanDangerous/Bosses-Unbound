@@ -2,10 +2,8 @@ package com.unbound.entities.client;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.unbound.bossesunbound;
-import com.unbound.entities.custom.GoblinEntity;
-import com.unbound.entities.custom.GoblinKingEntity;
-import net.minecraft.client.model.EntityModel;
+import com.unbound.BossesUnbound;
+import com.unbound.entities.GoblinKingEntity;
 import net.minecraft.client.model.HierarchicalModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;
@@ -14,11 +12,9 @@ import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 
-import javax.swing.text.html.parser.Entity;
-
 public class GoblinKingModel<T extends GoblinKingEntity> extends HierarchicalModel<T> {
     // This layer location should be baked with EntityRendererProvider.Context in the entity renderer and passed into this model's constructor
-    public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(bossesunbound.MODID, "goblin_king"), "main");
+    public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(BossesUnbound.MODID, "goblin_king"), "main");
     private final ModelPart root;
     private final ModelPart legs;
     private final ModelPart legLeft;

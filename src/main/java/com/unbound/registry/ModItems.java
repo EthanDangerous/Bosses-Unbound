@@ -1,14 +1,6 @@
-package com.unbound.items;
+package com.unbound.registry;
 
-import com.unbound.bossesunbound;
-import com.unbound.entities.ModEntities;
-import net.minecraft.core.component.DataComponents;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.EquipmentSlotGroup;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.monster.Monster;
+import com.unbound.BossesUnbound;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -16,7 +8,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 
 public class ModItems {
-    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(bossesunbound.MODID);
+    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(BossesUnbound.MODID);
 
     public static final DeferredItem<SwordItem> GOBLIN_DAGGER = ITEMS.register("goblin_dagger",
             () -> new SwordItem(Tiers.IRON, (new Item.Properties()).attributes(SwordItem.createAttributes(Tiers.IRON, 3, -2.4F))));
