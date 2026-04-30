@@ -14,7 +14,7 @@ import net.minecraft.util.Mth;
 
 public class GoblinKingModel<T extends GoblinKingEntity> extends HierarchicalModel<T> {
     // This layer location should be baked with EntityRendererProvider.Context in the entity renderer and passed into this model's constructor
-    public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(BossesUnbound.MODID, "goblin_king"), "main");
+    public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(BossesUnbound.MOD_ID, "goblin_king"), "main");
     private final ModelPart root;
     private final ModelPart legs;
     private final ModelPart legLeft;

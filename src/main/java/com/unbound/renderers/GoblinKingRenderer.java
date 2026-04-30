@@ -17,7 +17,7 @@ public class GoblinKingRenderer extends MobRenderer<GoblinKingEntity, GoblinKing
 
     @Override
     public ResourceLocation getTextureLocation(GoblinKingEntity goblinKingEntity) {
-        return ResourceLocation.fromNamespaceAndPath(BossesUnbound.MODID, "textures/entity/goblin_king/goblin_king.png");
+        return ResourceLocation.fromNamespaceAndPath(BossesUnbound.MOD_ID, "textures/entity/goblin_king/goblin_king.png");
     }
 
 

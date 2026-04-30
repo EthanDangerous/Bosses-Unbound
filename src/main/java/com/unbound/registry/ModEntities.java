@@ -19,11 +19,11 @@ import java.util.function.Supplier;
 public class ModEntities {
     // this is the creation of the new registry category as an object
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
-            DeferredRegister.create(BuiltInRegistries.ENTITY_TYPE, BossesUnbound.MODID);
+            DeferredRegister.create(BuiltInRegistries.ENTITY_TYPE, BossesUnbound.MOD_ID);
 
     public static final Supplier<EntityType<GoblinEntity>> GOBLIN =
             ENTITY_TYPES.register("goblin", () -> EntityType.Builder.of((EntityType.EntityFactory<GoblinEntity>) GoblinEntity::new, MobCategory.MONSTER)
-                    .sized(1.25F, 1.875F).build(BossesUnbound.MODID + ":" + "goblin"));
+                    .sized(1.25F, 1.875F).build(BossesUnbound.MOD_ID + ":" + "goblin"));
 
 
 

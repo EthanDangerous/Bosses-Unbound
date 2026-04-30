@@ -11,7 +11,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 
 public class ModItemModelProvider extends ItemModelProvider {
     public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
-        super(output, BossesUnbound.MODID, existingFileHelper);
+        super(output, BossesUnbound.MOD_ID, existingFileHelper);
     }
 
     @Override
@@ -26,6 +26,6 @@ public class ModItemModelProvider extends ItemModelProvider {
     private ItemModelBuilder handheldItem(DeferredItem<?> item) {
         return withExistingParent(item.getId().getPath(),
                 ResourceLocation.parse("item/handheld")).texture("layer0",
-                ResourceLocation.fromNamespaceAndPath(BossesUnbound.MODID,"item/" + item.getId().getPath()));
+                ResourceLocation.fromNamespaceAndPath(BossesUnbound.MOD_ID,"item/" + item.getId().getPath()));
     }
 }

@@ -1,6 +1,8 @@
 package com.unbound;
 
 import com.mojang.logging.LogUtils;
+import com.unbound.registry.ModBlockEntities;
+import com.unbound.registry.ModBlocks;
 import com.unbound.registry.ModEntities;
 import com.unbound.renderers.GoblinKingRenderer;
 import com.unbound.registry.ModItems;
@@ -39,18 +41,18 @@ import com.unbound.entities.client.GoblinKingModel;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
-@Mod(BossesUnbound.MODID)
+@Mod(BossesUnbound.MOD_ID)
 public class BossesUnbound {
     // Define mod id in a common place for everything to reference
-    public static final String MODID = "bossesunbound";
+    public static final String MOD_ID = "bossesunbound";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
     // Create a Deferred Register to hold Blocks which will all be registered under the "bossesunbound" namespace
-    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MODID);
+    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MOD_ID);
     // Create a Deferred Register to hold Items which will all be registered under the "bossesunbound" namespace
-    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);
+    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MOD_ID);
     // Create a Deferred Register to hold CreativeModeTabs which will all be registered under the "bossesunbound" namespace
-    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MOD_ID);
 
     // Creates a new Block with the id "bossesunbound:example_block", combining the namespace and path
     public static final DeferredBlock<Block> EXAMPLE_BLOCK = BLOCKS.registerSimpleBlock("example_block", BlockBehaviour.Properties.of().mapColor(MapColor.STONE));
@@ -84,6 +86,8 @@ public class BossesUnbound {
 
         ModEntities.register(modEventBus);
         ModItems.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         if (net.neoforged.fml.loading.FMLEnvironment.dist.isClient()) {
             modEventBus.addListener(ClientModEvents::onClientSetup);
@@ -151,6 +155,6 @@ public class BossesUnbound {
     }
 
     public static ResourceLocation locate(String path) {
-        return ResourceLocation.fromNamespaceAndPath(MODID, path);
+        return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
     }
 }

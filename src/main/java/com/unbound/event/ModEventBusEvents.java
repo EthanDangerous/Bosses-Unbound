@@ -11,7 +11,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 
-@EventBusSubscriber(modid = BossesUnbound.MODID)
+@EventBusSubscriber(modid = BossesUnbound.MOD_ID)
 public class ModEventBusEvents {
     @SubscribeEvent
     public static void registerLayers(FMLClientSetupEvent event) {
