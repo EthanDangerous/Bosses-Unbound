@@ -20,6 +20,7 @@ public class ModItems {
     public static final DeferredItem<SpawnEggItem> GOBLIN_KING_SPAWN_EGG = ITEMS.register("goblin_king_spawn_egg",
             () -> new SpawnEggItem(ModEntities.GOBLIN_KING.get(), 0x423a23, 0x3a4223, new Item.Properties()));
 
+    public static final DeferredItem<BlockItem> GOBLIN_TENT = ITEMS.registerSimpleBlockItem("goblin_tent", ModBlocks.GOBLIN_TENT);
 
 
     public static final DeferredItem<MaceItem> KINGS_MACE = ITEMS.register("kings_mace",

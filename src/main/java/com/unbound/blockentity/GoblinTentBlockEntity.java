@@ -3,6 +3,7 @@ package com.unbound.blockentity;
 import com.cmdpro.databank.model.animation.DatabankAnimationReference;
 import com.cmdpro.databank.model.animation.DatabankAnimationState;
 import com.cmdpro.databank.registry.BlockEntityRegistry;
+import com.unbound.registry.ModBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -19,6 +20,6 @@ public class GoblinTentBlockEntity extends BlockEntity {
     }
 
     public GoblinTentBlockEntity(BlockPos pos, BlockState blockState) {
-        super(BlockEntityRegistry.AREKKO.get(), pos, blockState);
+        super(ModBlockEntities.GOBLIN_TENT.get(), pos, blockState);
     }
 }

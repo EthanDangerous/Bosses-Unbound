@@ -18,7 +18,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(BuiltInRegistries.BLOCK,
             BossesUnbound.MOD_ID);
 
-    public static final Supplier<Block> GOBLIN_TENT = registerBlock("arekko",
+    public static final Supplier<Block> GOBLIN_TENT = registerBlock("goblin_tent",
             () -> new GoblinTent(DyeColor.WHITE, BlockBehaviour.Properties.ofFullCopy(Blocks.BONE_BLOCK).noOcclusion().noCollission()));
 
     public static void register(IEventBus bus){

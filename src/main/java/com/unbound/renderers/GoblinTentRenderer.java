@@ -21,7 +21,7 @@ public class GoblinTentRenderer extends DatabankBlockEntityRenderer<GoblinTentBl
 
         @Override
         public ResourceLocation getTextureLocation() {
-            return BossesUnbound.locate("textures/block/dead_makutuin.png");
+            return BossesUnbound.locate("textures/block/goblin_tent.png");
         }
 
         @Override
@@ -32,7 +32,7 @@ public class GoblinTentRenderer extends DatabankBlockEntityRenderer<GoblinTentBl
 
         public DatabankModel getModel() {
             if (model == null) {
-                model = DatabankModels.models.get(BossesUnbound.locate("dead_makutuin"));
+                model = DatabankModels.models.get(BossesUnbound.locate("goblin_tent"));
             }
             return model;
         }

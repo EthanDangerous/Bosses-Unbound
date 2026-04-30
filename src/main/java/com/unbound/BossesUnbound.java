@@ -12,10 +12,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -69,6 +66,7 @@ public class BossesUnbound {
         output.accept(ModItems.GOBLIN_HATCHET.get());
         output.accept(ModItems.GOBLIN_SPAWN_EGG.get());
         output.accept(ModItems.GOBLIN_KING_SPAWN_EGG.get());// Add the example item to the tab. For your own tabs, this method is preferred over the event
+        output.accept(ModItems.GOBLIN_TENT.get());
     }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
