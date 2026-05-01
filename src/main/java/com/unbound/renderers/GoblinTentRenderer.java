@@ -17,6 +17,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.state.properties.BedPart;
 import net.minecraft.world.phys.Vec3;
 
+import static net.minecraft.world.level.block.BedBlock.PART;
+
 public class GoblinTentRenderer extends DatabankBlockEntityRenderer<GoblinTentBlockEntity> {
     public GoblinTentRenderer(BlockEntityRendererProvider.Context rendererProvider) {
         super(new Model());
@@ -24,7 +26,7 @@ public class GoblinTentRenderer extends DatabankBlockEntityRenderer<GoblinTentBl
 
     @Override
     public void render(GoblinTentBlockEntity goblinTent, float pPartialTick, PoseStack poseStack, MultiBufferSource pBufferSource, int pPackedLight, int pPackedOverlay) {
-        if (goblinTent.getBlockState().getValue(GoblinTent.PART) != BedPart.FOOT) {
+        if (goblinTent.getBlockState().getValue(PART) != BedPart.FOOT) {
             return;
         }
 
