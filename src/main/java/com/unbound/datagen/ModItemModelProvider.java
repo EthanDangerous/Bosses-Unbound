@@ -1,6 +1,7 @@
 package com.unbound.datagen;
 
 import com.unbound.BossesUnbound;
+import com.unbound.registry.ModBlocks;
 import com.unbound.registry.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -16,16 +17,17 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        handheldItem(ModItems.KINGS_MACE);
-        handheldItem(ModItems.GOBLIN_HATCHET);
-        handheldItem(ModItems.GOBLIN_DAGGER);
-        basicItem(ModItems.GOBLIN_SPAWN_EGG.asItem());
-        basicItem(ModItems.GOBLIN_KING_SPAWN_EGG.asItem());
+        handheldItem(ModItems.KINGS_MACE.get().asItem());
+        handheldItem(ModItems.GOBLIN_HATCHET.get().asItem());
+        handheldItem(ModItems.GOBLIN_DAGGER.get().asItem());
+        basicItem(ModItems.GOBLIN_SPAWN_EGG.get().asItem());
+        basicItem(ModItems.GOBLIN_KING_SPAWN_EGG.get().asItem());
+        basicItem(ModBlocks.GOBLIN_TENT.get().asItem());
     }
 
-    private ItemModelBuilder handheldItem(DeferredItem<?> item) {
-        return withExistingParent(item.getId().getPath(),
-                ResourceLocation.parse("item/handheld")).texture("layer0",
-                ResourceLocation.fromNamespaceAndPath(BossesUnbound.MOD_ID,"item/" + item.getId().getPath()));
-    }
+//    private ItemModelBuilder handheldItem(DeferredItem<?> item) {
+//        return withExistingParent(item.getId().getPath(),
+//                ResourceLocation.parse("item/handheld")).texture("layer0",
+//                ResourceLocation.fromNamespaceAndPath(BossesUnbound.MOD_ID,"item/" + item.getId().getPath()));
+//    }
 }

@@ -16,9 +16,9 @@ public class ModItems {
             () -> new AxeItem(Tiers.IRON, (new Item.Properties()).attributes(AxeItem.createAttributes(Tiers.IRON, 6.0F, -3.1F))));
 
     public static final DeferredItem<SpawnEggItem> GOBLIN_SPAWN_EGG = ITEMS.register("goblin_spawn_egg",
-            () -> new SpawnEggItem(ModEntities.GOBLIN.get(), 0x423a23, 0x3a4223, new Item.Properties()));
+            () -> new SpawnEggItem(ModEntities.GOBLIN.get(), 0xffffff, 0xffffff, new Item.Properties()));
     public static final DeferredItem<SpawnEggItem> GOBLIN_KING_SPAWN_EGG = ITEMS.register("goblin_king_spawn_egg",
-            () -> new SpawnEggItem(ModEntities.GOBLIN_KING.get(), 0x423a23, 0x3a4223, new Item.Properties()));
+            () -> new SpawnEggItem(ModEntities.GOBLIN_KING.get(), 0xffffff, 0xffffff, new Item.Properties()));
 
     public static final DeferredItem<BlockItem> GOBLIN_TENT = ITEMS.registerSimpleBlockItem("goblin_tent", ModBlocks.GOBLIN_TENT);
 
