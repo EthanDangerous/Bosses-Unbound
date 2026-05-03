@@ -12,6 +12,7 @@ import com.unbound.entities.GoblinEntity;
 import net.minecraft.Util;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
+import net.minecraft.client.renderer.entity.layers.ItemInHandLayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.world.phys.Vec2;
@@ -22,6 +23,7 @@ public class GoblinRenderer extends DatabankLivingEntityRenderer<GoblinEntity> {
     public DefaultModel defaultModel;
     public TravelerModel travelerModel;
     public ArmoredModel armoredModel;
+    public SlingerModel slingerModel;
 
 //    private static final Map<GoblinVariant, ResourceLocation> LOCATION_BY_VARIANT =
 //            Util.make(Maps.newEnumMap(GoblinVariant.class), map -> {
@@ -37,6 +39,7 @@ public class GoblinRenderer extends DatabankLivingEntityRenderer<GoblinEntity> {
             map.put(GoblinVariant.DEFAULT, "textures/entity/goblin/goblin_default.png");
             map.put(GoblinVariant.TRAVELER, "textures/entity/goblin/goblin_traveler.png");
             map.put(GoblinVariant.ARMORED, "textures/entity/goblin/goblin_armored.png");
+            map.put(GoblinVariant.SLINGER, "textures/entity/goblin/goblin_slinger.png");
         });
 
 //        this.addLayer(new ItemInHandLayer<>(this, context.getItemInHandRenderer()));
@@ -47,11 +50,21 @@ public class GoblinRenderer extends DatabankLivingEntityRenderer<GoblinEntity> {
         this.defaultModel = new DefaultModel();
         this.travelerModel = new TravelerModel();
         this.armoredModel = new ArmoredModel();
+        this.slingerModel = new SlingerModel();
     }
 
     @Override
     public DatabankLivingEntityModel<GoblinEntity> getModel(GoblinEntity entity) {
-        return defaultModel; // this is to be switched up by variant. you can do that i'm sure ~Esét
+        switch(entity.getVariant()){
+            case GoblinVariant.TRAVELER:
+                return travelerModel;
+            case GoblinVariant.ARMORED:
+                return armoredModel;
+            case GoblinVariant.SLINGER:
+                return slingerModel;
+            default:
+                return defaultModel;
+        }
     }
 
     @Override
@@ -82,7 +95,7 @@ public class GoblinRenderer extends DatabankLivingEntityRenderer<GoblinEntity> {
 
         @Override
         public ResourceLocation getTextureLocation() {
-            return BossesUnbound.locate("textures/entity/goblin_default.png");
+            return BossesUnbound.locate("textures/entity/goblin/goblin_default.png");
         }
 
         @Override
@@ -99,14 +112,21 @@ public class GoblinRenderer extends DatabankLivingEntityRenderer<GoblinEntity> {
     public static class TravelerModel extends DefaultModel {
         @Override
         public ResourceLocation getTextureLocation() {
-            return BossesUnbound.locate("textures/entity/goblin_traveler.png");
+            return BossesUnbound.locate("textures/entity/goblin/goblin_traveler.png");
         }
     }
 
     public static class ArmoredModel extends DefaultModel {
         @Override
         public ResourceLocation getTextureLocation() {
-            return BossesUnbound.locate("textures/entity/goblin_armored.png");
+            return BossesUnbound.locate("textures/entity/goblin/goblin_armored.png");
+        }
+    }
+
+    public static class SlingerModel extends DefaultModel {
+        @Override
+        public ResourceLocation getTextureLocation() {
+            return BossesUnbound.locate("textures/entity/goblin/goblin_slinger.png");
         }
     }
 }

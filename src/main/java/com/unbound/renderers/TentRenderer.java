@@ -16,6 +16,7 @@ import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.state.properties.BedPart;
+import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 
 import static net.minecraft.world.level.block.BedBlock.PART;
@@ -46,6 +47,11 @@ public class TentRenderer extends DatabankBlockEntityRenderer<TentBlockEntity> {
         poseStack.translate(0, 0, 0.5);
 
         super.render(goblinTent, pPartialTick, poseStack, pBufferSource, pPackedLight, pPackedOverlay);
+    }
+
+    @Override
+    public AABB getRenderBoundingBox(TentBlockEntity blockEntity) {
+        return AABB.INFINITE;
     }
 
     public static class Model extends DatabankBlockEntityModel<TentBlockEntity> {

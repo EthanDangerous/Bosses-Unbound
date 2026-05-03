@@ -6,6 +6,7 @@ import com.unbound.registry.ModBlocks;
 import com.unbound.registry.ModEntities;
 import com.unbound.renderers.GoblinKingRenderer;
 import com.unbound.registry.ModItems;
+import com.unbound.renderers.GoblinRenderer;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -34,7 +35,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.slf4j.Logger;
-import com.unbound.entities.client.GoblinKingModel;
+//import com.unbound.entities.client.GoblinKingModel;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
@@ -141,14 +142,14 @@ public class BossesUnbound {
         }
 
         public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
-//            event.registerEntityRenderer(ModEntities.GOBLIN.get(), GoblinRenderer::new);
+            event.registerEntityRenderer(ModEntities.GOBLIN.get(), GoblinRenderer::new);
             event.registerEntityRenderer(ModEntities.GOBLIN_KING.get(), GoblinKingRenderer::new);
         }
 
         public static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
             System.out.println(">>> REGISTERING LAYERS");
 //            event.registerLayerDefinition(GoblinModel.LAYER_LOCATION, GoblinModel::createBodyLayer);
-            event.registerLayerDefinition(GoblinKingModel.LAYER_LOCATION, GoblinKingModel::createBodyLayer);
+//            event.registerLayerDefinition(GoblinKingModel.LAYER_LOCATION, GoblinKingModel::createBodyLayer);
         }
 
     }

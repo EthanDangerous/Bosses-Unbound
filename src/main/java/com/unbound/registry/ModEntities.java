@@ -23,7 +23,7 @@ public class ModEntities {
 
     public static final Supplier<EntityType<GoblinEntity>> GOBLIN =
             ENTITY_TYPES.register("goblin", () -> EntityType.Builder.of((EntityType.EntityFactory<GoblinEntity>) GoblinEntity::new, MobCategory.MONSTER)
-                    .sized(1.25F, 1.875F).build(BossesUnbound.MOD_ID + ":" + "goblin"));
+                    .sized(0.7f, 0.9f).build(BossesUnbound.MOD_ID + ":" + "goblin"));
 
 
 

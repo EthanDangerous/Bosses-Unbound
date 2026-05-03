@@ -1,0 +1,1432 @@
+{
+  "animations": {
+    "render": {
+      "length": 0,
+      "looping": false,
+      "animation": [
+        {
+          "bone": "torso",
+          "target": "rotation",
+          "keyframes": [
+            {
+              "timestamp": 0,
+              "target": [
+                -5.0190018175,
+                4.9809253219,
+                -0.4368798418
+              ],
+              "interpolation": "linear"
+            }
+          ]
+        },
+        {
+          "bone": "head",
+          "target": "rotation",
+          "keyframes": [
+            {
+              "timestamp": 0,
+              "target": [
+                0,
+                5,
+                5
+              ],
+              "interpolation": "linear"
+            }
+          ]
+        },
+        {
+          "bone": "left_arm",
+          "target": "rotation",
+          "keyframes": [
+            {
+              "timestamp": 0,
+              "target": [
+                0,
+                0,
+                -5
+              ],
+              "interpolation": "linear"
+            }
+          ]
+        },
+        {
+          "bone": "left_arm",
+          "target": "position",
+          "keyframes": [
+            {
+              "timestamp": 0,
+              "target": [
+                0,
+                -1,
+                0
+              ],
+              "interpolation": "linear"
+            }
+          ]
+        },
+        {
+          "bone": "right_arm",
+          "target": "rotation",
+          "keyframes": [
+            {
+              "timestamp": 0,
+              "target": [
+                22.5,
+                0,
+                22.5
+              ],
+              "interpolation": "linear"
+            }
+          ]
+        },
+        {
+          "bone": "left_leg",
+          "target": "rotation",
+          "keyframes": [
+            {
+              "timestamp": 0,
+              "target": [
+                0,
+                22.5,
+                0
+              ],
+              "interpolation": "linear"
+            }
+          ]
+        }
+      ]
+    },
+    "walk": {
+      "length": 2,
+      "looping": true,
+      "animation": [
+        {
+          "bone": "torso",
+          "target": "rotation",
+          "keyframes": [
+            {
+              "timestamp": 0,
+              "target": [
+                -13.464101615137753,
+                0,
+                0
+              ],
+              "interpolation": "linear"
+            }
+          ]
+        },
+        {
+          "bone": "torso",
+          "target": "position",
+          "keyframes": [
+            {
+              "timestamp": 0,
+              "target": [
+                0,
+                0.17320508075688773,
+                0
+              ],
+              "interpolation": "linear"
+            }
+          ]
+        },
+        {
+          "bone": "head",
+          "target": "rotation",
+          "keyframes": [
+            {
+              "timestamp": 0,
+              "target": [
+                10,
+                0,
+                0
+              ],
+              "interpolation": "linear"
+            }
+          ]
+        },
+        {
+          "bone": "left_arm",
+          "target": "rotation",
+          "keyframes": [
+            {
+              "timestamp": 0,
+              "target": [
+                35,
+                0,
+                0
+              ],
+              "interpolation": "linear"
+            }
+          ]
+        },
+        {
+          "bone": "right_arm",
+          "target": "rotation",
+          "keyframes": [
+            {
+              "timestamp": 0,
+              "target": [
+                -35,
+                0,
+                0
+              ],
+              "interpolation": "linear"
+            }
+          ]
+        },
+        {
+          "bone": "left_leg",
+          "target": "rotation",
+          "keyframes": [
+            {
+              "timestamp": 0,
+              "target": [
+                -35,
+                0,
+                0
+              ],
+              "interpolation": "linear"
+            }
+          ]
+        },
+        {
+          "bone": "right_leg",
+          "target": "rotation",
+          "keyframes": [
+            {
+              "timestamp": 0,
+              "target": [
+                35,
+                0,
+                0
+              ],
+              "interpolation": "linear"
+            }
+          ]
+        },
+        {
+          "bone": "nose",
+          "target": "rotation",
+          "keyframes": [
+            {
+              "timestamp": 0,
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "interpolation": "linear"
+            }
+          ]
+        },
+        {
+          "bone": "helmet",
+          "target": "rotation",
+          "keyframes": [
+            {
+              "timestamp": 0,
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "interpolation": "linear"
+            }
+          ]
+        }
+      ]
+    },
+    "idle": {
+      "length": 2,
+      "looping": true,
+      "animation": [
+        {
+          "bone": "torso",
+          "target": "rotation",
+          "keyframes": [
+            {
+              "timestamp": 0,
+              "target": [
+                0,
+                0,
+                5
+              ],
+              "interpolation": "linear"
+            }
+          ]
+        },
+        {
+          "bone": "torso",
+          "target": "position",
+          "keyframes": [
+            {
+              "timestamp": 0,
+              "target": [
+                0,
+                0.08660254037844387,
+                0
+              ],
+              "interpolation": "linear"
+            }
+          ]
+        },
+        {
+          "bone": "head",
+          "target": "rotation",
+          "keyframes": [
+            {
+              "timestamp": 0,
+              "target": [
+                0,
+                0,
+                -5
+              ],
+              "interpolation": "linear"
+            }
+          ]
+        },
+        {
+          "bone": "helmet",
+          "target": "rotation",
+          "keyframes": [
+            {
+              "timestamp": 0,
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "interpolation": "linear"
+            }
+          ]
+        },
+        {
+          "bone": "left_arm",
+          "target": "rotation",
+          "keyframes": [
+            {
+              "timestamp": 0,
+              "target": [
+                0,
+                0,
+                -5
+              ],
+              "interpolation": "linear"
+            }
+          ]
+        },
+        {
+          "bone": "right_arm",
+          "target": "rotation",
+          "keyframes": [
+            {
+              "timestamp": 0,
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "interpolation": "linear"
+            }
+          ]
+        }
+      ]
+    },
+    "attack": {
+      "length": 2,
+      "looping": false,
+      "animation": [
+        {
+          "bone": "torso",
+          "target": "rotation",
+          "keyframes": [
+            {
+              "timestamp": 0,
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "interpolation": "smooth"
+            },
+            {
+              "timestamp": 0.20833,
+              "target": [
+                5,
+                0,
+                0
+              ],
+              "interpolation": "smooth"
+            },
+            {
+              "timestamp": 0.33333,
+              "target": [
+                -17.7531315481,
+                9.5327427607,
+                -3.0351259095
+              ],
+              "interpolation": "smooth"
+            },
+            {
+              "timestamp": 0.5,
+              "target": [
+                -17.7531315481,
+                9.5327427607,
+                -3.0351259095
+              ],
+              "interpolation": "smooth"
+            },
+            {
+              "timestamp": 0.70833,
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "interpolation": "smooth"
+            }
+          ]
+        },
+        {
+          "bone": "torso",
+          "target": "scale",
+          "keyframes": [
+            {
+              "timestamp": 0.08333,
+              "target": [
+                1,
+                1,
+                1
+              ],
+              "interpolation": "smooth"
+            },
+            {
+              "timestamp": 0.25,
+              "target": [
+                1,
+                1,
+                1.2
+              ],
+              "interpolation": "smooth"
+            },
+            {
+              "timestamp": 0.54167,
+              "target": [
+                1,
+                1,
+                1
+              ],
+              "interpolation": "smooth"
+            },
+            {
+              "timestamp": 0.70833,
+              "target": [
+                1,
+                1,
+                1
+              ],
+              "interpolation": "smooth"
+            }
+          ]
+        },
+        {
+          "bone": "head",
+          "target": "rotation",
+          "keyframes": [
+            {
+              "timestamp": 0,
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "interpolation": "smooth"
+            },
+            {
+              "timestamp": 0.20833,
+              "target": [
+                5,
+                0,
+                0
+              ],
+              "interpolation": "smooth"
+            },
+            {
+              "timestamp": 0.33333,
+              "target": [
+                5.0429232705,
+                -7.4712970489,
+                -0.6573984637
+              ],
+              "interpolation": "smooth"
+            },
+            {
+              "timestamp": 0.5,
+              "target": [
+                5.0429232705,
+                -7.4712970489,
+                -0.6573984637
+              ],
+              "interpolation": "smooth"
+            },
+            {
+              "timestamp": 0.70833,
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "interpolation": "smooth"
+            }
+          ]
+        },
+        {
+          "bone": "helmet",
+          "target": "rotation",
+          "keyframes": [
+            {
+              "timestamp": 0,
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "interpolation": "smooth"
+            },
+            {
+              "timestamp": 0.20833,
+              "target": [
+                -0.2186512015,
+                -4.995229008,
+                2.5095374083
+              ],
+              "interpolation": "smooth"
+            },
+            {
+              "timestamp": 0.33333,
+              "target": [
+                0.1091175935,
+                2.4976190449,
+                2.5023786868
+              ],
+              "interpolation": "smooth"
+            },
+            {
+              "timestamp": 0.70833,
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "interpolation": "smooth"
+            }
+          ]
+        },
+        {
+          "bone": "right_arm",
+          "target": "rotation",
+          "keyframes": [
+            {
+              "timestamp": 0,
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "interpolation": "smooth"
+            },
+            {
+              "timestamp": 0.20833,
+              "target": [
+                200.9410204722,
+                8.4210581181,
+                -20.9410204722
+              ],
+              "interpolation": "smooth"
+            },
+            {
+              "timestamp": 0.33333,
+              "target": [
+                62.6141872063,
+                28.7487657844,
+                -31.1911170004
+              ],
+              "interpolation": "smooth"
+            },
+            {
+              "timestamp": 0.5,
+              "target": [
+                62.6141872063,
+                28.7487657844,
+                -31.1911170004
+              ],
+              "interpolation": "smooth"
+            },
+            {
+              "timestamp": 0.70833,
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "interpolation": "smooth"
+            }
+          ]
+        },
+        {
+          "bone": "right_arm",
+          "target": "position",
+          "keyframes": [
+            {
+              "timestamp": 0,
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "interpolation": "smooth"
+            },
+            {
+              "timestamp": 0.20833,
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "interpolation": "smooth"
+            },
+            {
+              "timestamp": 0.33333,
+              "target": [
+                -1,
+                0,
+                -2
+              ],
+              "interpolation": "smooth"
+            },
+            {
+              "timestamp": 0.5,
+              "target": [
+                -1,
+                0,
+                -2
+              ],
+              "interpolation": "smooth"
+            },
+            {
+              "timestamp": 0.70833,
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "interpolation": "smooth"
+            }
+          ]
+        },
+        {
+          "bone": "left_arm",
+          "target": "rotation",
+          "keyframes": [
+            {
+              "timestamp": 0,
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "interpolation": "smooth"
+            },
+            {
+              "timestamp": 0.16667,
+              "target": [
+                44.6916,
+                -3.8102,
+                9.2525
+              ],
+              "interpolation": "smooth"
+            },
+            {
+              "timestamp": 0.25,
+              "target": [
+                44.6916,
+                -3.8102,
+                9.2525
+              ],
+              "interpolation": "smooth"
+            },
+            {
+              "timestamp": 0.41667,
+              "target": [
+                8.7262,
+                39.3455,
+                -24.2226
+              ],
+              "interpolation": "smooth"
+            },
+            {
+              "timestamp": 0.5,
+              "target": [
+                8.7262,
+                39.3455,
+                -24.2226
+              ],
+              "interpolation": "smooth"
+            },
+            {
+              "timestamp": 0.75,
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "interpolation": "smooth"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "parts": [
+    {
+      "type": "databank:group",
+      "name": "goblin",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "children": [
+        {
+          "type": "databank:group",
+          "name": "body",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            5,
+            0
+          ],
+          "children": [
+            {
+              "type": "databank:group",
+              "name": "torso",
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "offset": [
+                0,
+                -1,
+                0
+              ],
+              "children": [
+                {
+                  "type": "databank:cube",
+                  "name": "cube",
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    -1,
+                    -1,
+                    -1
+                  ],
+                  "texOffset": [
+                    0,
+                    25
+                  ],
+                  "mirror": false,
+                  "origin": [
+                    -2,
+                    0,
+                    -1
+                  ],
+                  "dimensions": [
+                    6,
+                    6,
+                    4
+                  ],
+                  "inflate": 0
+                },
+                {
+                  "type": "databank:cube",
+                  "name": "cube1",
+                  "rotation": [
+                    0.17453292519943295,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    0,
+                    0.5,
+                    2.5
+                  ],
+                  "texOffset": [
+                    0,
+                    41
+                  ],
+                  "mirror": false,
+                  "origin": [
+                    -1.5,
+                    -0.5,
+                    -1.5
+                  ],
+                  "dimensions": [
+                    3,
+                    5,
+                    3
+                  ],
+                  "inflate": 0
+                },
+                {
+                  "type": "databank:cube",
+                  "name": "cube2",
+                  "rotation": [
+                    0.17453292519943295,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    0,
+                    0.5,
+                    2.5
+                  ],
+                  "texOffset": [
+                    0,
+                    49
+                  ],
+                  "mirror": false,
+                  "origin": [
+                    -1.5,
+                    -0.5,
+                    -1.5
+                  ],
+                  "dimensions": [
+                    3,
+                    5,
+                    3
+                  ],
+                  "inflate": 0.25
+                },
+                {
+                  "type": "databank:cube",
+                  "name": "cube3",
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    -1,
+                    -1,
+                    -1
+                  ],
+                  "texOffset": [
+                    20,
+                    25
+                  ],
+                  "mirror": false,
+                  "origin": [
+                    -2,
+                    2,
+                    -1
+                  ],
+                  "dimensions": [
+                    6,
+                    4,
+                    4
+                  ],
+                  "inflate": 0.25
+                },
+                {
+                  "type": "databank:group",
+                  "name": "head",
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    0,
+                    3,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "databank:cube",
+                      "name": "cube4",
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "offset": [
+                        0,
+                        0,
+                        -1.5
+                      ],
+                      "texOffset": [
+                        0,
+                        12
+                      ],
+                      "mirror": false,
+                      "origin": [
+                        -4,
+                        0,
+                        -3
+                      ],
+                      "dimensions": [
+                        8,
+                        7,
+                        6
+                      ],
+                      "inflate": 0
+                    },
+                    {
+                      "type": "databank:group",
+                      "name": "helmet",
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "offset": [
+                        0.5,
+                        3.5,
+                        -1.5
+                      ],
+                      "children": [
+                        {
+                          "type": "databank:cube",
+                          "name": "cube5",
+                          "rotation": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "offset": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "texOffset": [
+                            15,
+                            40
+                          ],
+                          "mirror": false,
+                          "origin": [
+                            -4.5,
+                            -2.5,
+                            -3
+                          ],
+                          "dimensions": [
+                            8,
+                            6,
+                            6
+                          ],
+                          "inflate": 0.25
+                        }
+                      ]
+                    },
+                    {
+                      "type": "databank:group",
+                      "name": "left_eye",
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "offset": [
+                        -2.5,
+                        2,
+                        -4.51
+                      ],
+                      "children": [
+                        {
+                          "type": "databank:cube",
+                          "name": "cube6",
+                          "rotation": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "offset": [
+                            2,
+                            -0.5,
+                            3.01
+                          ],
+                          "texOffset": [
+                            28,
+                            23
+                          ],
+                          "mirror": false,
+                          "origin": [
+                            -3,
+                            0,
+                            -3.01
+                          ],
+                          "dimensions": [
+                            2,
+                            1,
+                            0
+                          ],
+                          "inflate": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "databank:group",
+                      "name": "right_eye",
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "offset": [
+                        2.5,
+                        2,
+                        -4.51
+                      ],
+                      "children": [
+                        {
+                          "type": "databank:cube",
+                          "name": "cube7",
+                          "rotation": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "offset": [
+                            -2,
+                            -0.5,
+                            3.01
+                          ],
+                          "texOffset": [
+                            28,
+                            23
+                          ],
+                          "mirror": true,
+                          "origin": [
+                            1,
+                            0,
+                            -3.01
+                          ],
+                          "dimensions": [
+                            2,
+                            1,
+                            0
+                          ],
+                          "inflate": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "databank:group",
+                      "name": "nose",
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "offset": [
+                        0,
+                        1.5,
+                        -3.5
+                      ],
+                      "children": [
+                        {
+                          "type": "databank:cube",
+                          "name": "cube8",
+                          "rotation": [
+                            -0.17453292519943295,
+                            0,
+                            0
+                          ],
+                          "offset": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "texOffset": [
+                            36,
+                            33
+                          ],
+                          "mirror": false,
+                          "origin": [
+                            -1,
+                            -2.5,
+                            -2
+                          ],
+                          "dimensions": [
+                            2,
+                            3,
+                            2
+                          ],
+                          "inflate": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "databank:group",
+                      "name": "right_ear",
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "offset": [
+                        4,
+                        2,
+                        -0.5
+                      ],
+                      "children": [
+                        {
+                          "type": "databank:cube",
+                          "name": "cube9",
+                          "rotation": [
+                            0,
+                            0,
+                            0.08726646259971647
+                          ],
+                          "offset": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "texOffset": [
+                            28,
+                            12
+                          ],
+                          "mirror": true,
+                          "origin": [
+                            -1,
+                            -1,
+                            0
+                          ],
+                          "dimensions": [
+                            7,
+                            5,
+                            0
+                          ],
+                          "inflate": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "databank:group",
+                      "name": "left_ear",
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "offset": [
+                        -4,
+                        2,
+                        -0.5
+                      ],
+                      "children": [
+                        {
+                          "type": "databank:cube",
+                          "name": "cube10",
+                          "rotation": [
+                            0,
+                            0,
+                            -0.08726646259971647
+                          ],
+                          "offset": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "texOffset": [
+                            28,
+                            12
+                          ],
+                          "mirror": false,
+                          "origin": [
+                            -6,
+                            -1,
+                            0
+                          ],
+                          "dimensions": [
+                            7,
+                            5,
+                            0
+                          ],
+                          "inflate": 0
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "databank:group",
+                  "name": "left_arm",
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    -3,
+                    2.5,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "databank:cube",
+                      "name": "cube11",
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "offset": [
+                        -4,
+                        -3.5,
+                        0
+                      ],
+                      "texOffset": [
+                        20,
+                        33
+                      ],
+                      "mirror": false,
+                      "origin": [
+                        2,
+                        -1,
+                        -1
+                      ],
+                      "dimensions": [
+                        2,
+                        5,
+                        2
+                      ],
+                      "inflate": 0
+                    },
+                    {
+                      "type": "databank:cube",
+                      "name": "cube12",
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "offset": [
+                        -3.5,
+                        -3,
+                        0.5
+                      ],
+                      "texOffset": [
+                        30,
+                        0
+                      ],
+                      "mirror": false,
+                      "origin": [
+                        1,
+                        2,
+                        -2
+                      ],
+                      "dimensions": [
+                        3,
+                        2,
+                        3
+                      ],
+                      "inflate": 0.01
+                    }
+                  ]
+                },
+                {
+                  "type": "databank:group",
+                  "name": "right_arm",
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    3,
+                    2.5,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "databank:cube",
+                      "name": "cube13",
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "offset": [
+                        4,
+                        -3.5,
+                        0
+                      ],
+                      "texOffset": [
+                        20,
+                        33
+                      ],
+                      "mirror": true,
+                      "origin": [
+                        -4,
+                        -1,
+                        -1
+                      ],
+                      "dimensions": [
+                        2,
+                        5,
+                        2
+                      ],
+                      "inflate": 0
+                    },
+                    {
+                      "type": "databank:cube",
+                      "name": "cube14",
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "offset": [
+                        3.5,
+                        -3,
+                        0.5
+                      ],
+                      "texOffset": [
+                        30,
+                        0
+                      ],
+                      "mirror": true,
+                      "origin": [
+                        -4,
+                        2,
+                        -2
+                      ],
+                      "dimensions": [
+                        3,
+                        2,
+                        3
+                      ],
+                      "inflate": 0.01
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "databank:group",
+              "name": "left_leg",
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "offset": [
+                -1.5,
+                -2,
+                0
+              ],
+              "children": [
+                {
+                  "type": "databank:cube",
+                  "name": "cube15",
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    0,
+                    -6,
+                    -1
+                  ],
+                  "texOffset": [
+                    0,
+                    35
+                  ],
+                  "mirror": false,
+                  "origin": [
+                    -1,
+                    3,
+                    0
+                  ],
+                  "dimensions": [
+                    2,
+                    4,
+                    2
+                  ],
+                  "inflate": 0
+                }
+              ]
+            },
+            {
+              "type": "databank:group",
+              "name": "right_leg",
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "offset": [
+                1.5,
+                -2,
+                0
+              ],
+              "children": [
+                {
+                  "type": "databank:cube",
+                  "name": "cube16",
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    0,
+                    -6,
+                    -1
+                  ],
+                  "texOffset": [
+                    0,
+                    35
+                  ],
+                  "mirror": true,
+                  "origin": [
+                    -1,
+                    3,
+                    0
+                  ],
+                  "dimensions": [
+                    2,
+                    4,
+                    2
+                  ],
+                  "inflate": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "textureSize": [
+    64,
+    64
+  ],
+  "version": 1
+}

@@ -41,7 +41,12 @@ public class GoblinEntity extends Monster {
 
     public DatabankAnimationState animState = new DatabankEntityAnimationState("idle", this)
             .addAnim(new DatabankAnimationReference("idle", (state, anim) -> {}, (state, anim) -> {}));
-    private int idleAnimTimeout = 0;
+
+    public GoblinEntity(EntityType<? extends Monster> entityType, Level level) {
+        super(entityType, level);
+        animState.setLevel(level);
+    }
+
 
     // this is where we add the variants
     private static final EntityDataAccessor<Integer> VARIANT =
@@ -56,9 +61,9 @@ public class GoblinEntity extends Monster {
             ResourceLocation.fromNamespaceAndPath("bossesunbound", "entities/goblin_armored"));
 
 
-    public GoblinEntity(EntityType<? extends Monster> p_27557_, Level p_27558_) {
-        super(p_27557_, p_27558_);
-    }
+//    public GoblinEntity(EntityType<? extends Monster> p_27557_, Level p_27558_) {
+//        super(p_27557_, p_27558_);
+//    }
 
     // the method that grabs the correct loot table for any variant
     @Override
@@ -66,8 +71,15 @@ public class GoblinEntity extends Monster {
         return switch (this.getVariant()) {
             case TRAVELER -> TRAVELER_LOOT;
             case ARMORED -> ARMORED_LOOT;
+//            case SLINGER -> SLINGER_LOOT;
             default -> DEFAULT_LOOT;
         };
+    }
+
+    @Override
+    protected void setLevel(Level level) {
+        super.setLevel(level);
+        animState.setLevel(level);
     }
 
     @Override

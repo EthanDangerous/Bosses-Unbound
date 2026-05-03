@@ -5,6 +5,9 @@ the main class for the smaller goblins
 this is where all of the mod functionality should be, including ai
  */
 
+import com.cmdpro.databank.model.animation.DatabankAnimationReference;
+import com.cmdpro.databank.model.animation.DatabankAnimationState;
+import com.cmdpro.databank.model.animation.DatabankEntityAnimationState;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -22,14 +25,15 @@ import net.minecraft.world.level.storage.loot.LootTable;
 
 public class GoblinKingEntity extends Monster {
 
-    public static final AnimationState idleAnimState = new AnimationState();
-    private int idleAnimTimeout = 0;
+    public DatabankAnimationState animState = new DatabankEntityAnimationState("idle", this)
+            .addAnim(new DatabankAnimationReference("idle", (state, anim) -> {}, (state, anim) -> {}));
 
     private static final ResourceKey<LootTable> LOOT  = ResourceKey.create(Registries.LOOT_TABLE,
-            ResourceLocation.fromNamespaceAndPath("bossesunbound", "entities/goblin_default"));
+            ResourceLocation.fromNamespaceAndPath("bossesunbound", "entities/goblin_king"));
 
-    public GoblinKingEntity(EntityType<? extends Monster> p_27557_, Level p_27558_) {
-        super(p_27557_, p_27558_);
+    public GoblinKingEntity(EntityType<? extends Monster> entityType, Level level) {
+        super(entityType, level);
+        animState.setLevel(level);
     }
 
     // the method that grabs the correct loot table for any variant
@@ -64,6 +68,12 @@ public class GoblinKingEntity extends Monster {
                 .add(Attributes.ARMOR, 12D)
                 .add(Attributes.KNOCKBACK_RESISTANCE, 1D)
                 .add(Attributes.FOLLOW_RANGE, 40D);
+    }
+
+    @Override
+    protected void setLevel(Level level) {
+        super.setLevel(level);
+        animState.setLevel(level);
     }
 
     @Override
