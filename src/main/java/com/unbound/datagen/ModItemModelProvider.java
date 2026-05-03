@@ -23,6 +23,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.GOBLIN_SPAWN_EGG.get().asItem());
         basicItem(ModItems.GOBLIN_KING_SPAWN_EGG.get().asItem());
         basicItem(ModBlocks.GOBLIN_TENT.get().asItem());
+        basicItem(ModBlocks.TENT.get().asItem());
     }
 
 //    private ItemModelBuilder handheldItem(DeferredItem<?> item) {

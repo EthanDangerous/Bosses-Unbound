@@ -2,6 +2,7 @@ package com.unbound.registry;
 
 import com.unbound.BossesUnbound;
 import com.unbound.block.GoblinTent;
+import com.unbound.block.Tent;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
@@ -20,6 +21,9 @@ public class ModBlocks {
 
     public static final Supplier<Block> GOBLIN_TENT = registerBlock("goblin_tent",
             () -> new GoblinTent(DyeColor.WHITE, BlockBehaviour.Properties.ofFullCopy(Blocks.BONE_BLOCK).noOcclusion().noCollission()));
+
+    public static final Supplier<Block> TENT = registerBlock("tent",
+            () -> new Tent(DyeColor.WHITE, BlockBehaviour.Properties.ofFullCopy(Blocks.BONE_BLOCK).noOcclusion().noCollission()));
 
     public static void register(IEventBus bus){
         BLOCKS.register(bus);

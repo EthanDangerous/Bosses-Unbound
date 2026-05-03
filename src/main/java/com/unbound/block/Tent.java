@@ -1,6 +1,7 @@
 package com.unbound.block;
 
-import com.unbound.blockentity.GoblinTentBlockEntity;
+import com.unbound.blockentity.TentBlockEntity;
+import com.unbound.registry.ModBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.DyeColor;
@@ -16,8 +17,8 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 import javax.annotation.Nullable;
 
-public class GoblinTent extends Tent implements EntityBlock {
-    public GoblinTent(DyeColor color, Properties properties) {
+public class Tent extends BedBlock implements EntityBlock {
+    public Tent(DyeColor color, Properties properties) {
         super(color, properties);
     }
 
@@ -54,7 +55,7 @@ public class GoblinTent extends Tent implements EntityBlock {
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-        return new GoblinTentBlockEntity(pos, state);
+        return new TentBlockEntity(pos, state);
     }
 
     @Override

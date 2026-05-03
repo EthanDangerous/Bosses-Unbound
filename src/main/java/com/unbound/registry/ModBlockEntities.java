@@ -1,10 +1,12 @@
 package com.unbound.registry;
 
-import com.cmdpro.databank.registry.BlockRegistry;
 import com.unbound.BossesUnbound;
 import com.unbound.blockentity.GoblinTentBlockEntity;
+import com.unbound.blockentity.TentBlockEntity;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -18,6 +20,11 @@ public class ModBlockEntities {
             register("goblin_tent", () ->
                     BlockEntityType.Builder.of(GoblinTentBlockEntity::new,
                             ModBlocks.GOBLIN_TENT.get()).build(null));
+
+    public static final Supplier<BlockEntityType<TentBlockEntity>> TENT =
+            register("tent", () ->
+                    BlockEntityType.Builder.of(TentBlockEntity::new,
+                            ModBlocks.TENT.get()).build(null));
 
     public static void register(IEventBus bus){
         BLOCK_ENTITIES.register(bus);

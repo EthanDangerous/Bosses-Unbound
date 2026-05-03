@@ -5,9 +5,11 @@ import com.cmdpro.databank.model.animation.DatabankAnimationState;
 import com.unbound.registry.ModBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class GoblinTentBlockEntity extends TentBlockEntity {
+public class TentBlockEntity extends BlockEntity {
     public DatabankAnimationState animState = new DatabankAnimationState("animation")
             .addAnim(new DatabankAnimationReference("animation", (state, anim) -> {}, (state, anim) -> {}));
 
@@ -17,7 +19,11 @@ public class GoblinTentBlockEntity extends TentBlockEntity {
         animState.setLevel(level);
     }
 
-    public GoblinTentBlockEntity(BlockPos pos, BlockState blockState) {
-        super(ModBlockEntities.GOBLIN_TENT.get(), pos, blockState);
+    public TentBlockEntity(BlockPos pos, BlockState blockState) {
+        super(ModBlockEntities.TENT.get(), pos, blockState);
+    }
+
+    protected TentBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState blockState) {
+        super(type, pos, blockState);
     }
 }
