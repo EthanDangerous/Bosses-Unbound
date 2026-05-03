@@ -7,6 +7,7 @@ import com.unbound.renderers.GoblinRenderer;
 import com.unbound.entities.GoblinEntity;
 import com.unbound.entities.GoblinKingEntity;
 import com.unbound.renderers.GoblinTentRenderer;
+import com.unbound.renderers.TentRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -27,6 +28,7 @@ public class ModEventBusEvents {
     @SubscribeEvent
     public static void registerRenderers(final EntityRenderersEvent.RegisterRenderers event) {
         event.registerBlockEntityRenderer(ModBlockEntities.GOBLIN_TENT.get(), GoblinTentRenderer::new);
+        event.registerBlockEntityRenderer(ModBlockEntities.TENT.get(), TentRenderer::new);
     }
 
         @SubscribeEvent

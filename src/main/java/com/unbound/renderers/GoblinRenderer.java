@@ -2,6 +2,7 @@ package com.unbound.renderers;
 
 import com.cmdpro.databank.model.DatabankModel;
 import com.cmdpro.databank.model.DatabankModels;
+import com.cmdpro.databank.model.animation.DatabankAnimationState;
 import com.cmdpro.databank.model.entity.DatabankLivingEntityModel;
 import com.cmdpro.databank.model.entity.DatabankLivingEntityRenderer;
 import com.google.common.collect.Maps;
@@ -101,7 +102,18 @@ public class GoblinRenderer extends DatabankLivingEntityRenderer<GoblinEntity> {
         @Override
         public void setupModelPose(GoblinEntity pEntity, float partialTick) {
             pEntity.animState.updateAnimDefinitions(getModel());
-            animate(pEntity.animState);
+            DatabankAnimationState state = pEntity.animState;
+
+            double speed = pEntity.getDeltaMovement().horizontalDistanceSqr();
+
+            if (speed > 0) {
+                state.setAnim("walk");
+            } else {
+                state.setAnim("idle");
+            }
+
+            animate(state);
+
             Vec2 rot = new Vec2(Mth.lerp(partialTick, pEntity.xRotO, pEntity.getXRot()), Mth.rotLerp(partialTick, pEntity.yHeadRotO, pEntity.yHeadRot));
             float bodyRot = Mth.rotLerp(partialTick, pEntity.yBodyRotO, pEntity.yBodyRot);
             modelPose.stringToPart.get("head").rotation.x = rot.x * (float) (Math.PI / 180.0);

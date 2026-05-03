@@ -40,7 +40,9 @@ import java.util.Objects;
 public class GoblinEntity extends Monster {
 
     public DatabankAnimationState animState = new DatabankEntityAnimationState("idle", this)
-            .addAnim(new DatabankAnimationReference("idle", (state, anim) -> {}, (state, anim) -> {}));
+            .addAnim(new DatabankAnimationReference("idle", (state, anim) -> {}, (state, anim) -> {}))
+            .addAnim(new DatabankAnimationReference("walk", (state, anim) -> {}, (state, anim) -> {}))
+            .addAnim(new DatabankAnimationReference("attack", (state, anim) -> {}, (state, anim) -> {}));
 
     public GoblinEntity(EntityType<? extends Monster> entityType, Level level) {
         super(entityType, level);
@@ -189,21 +191,11 @@ public class GoblinEntity extends Monster {
         }
     }
 
-//    private void setupAnimationStates() {
-//        if(this.idleAnimTimeout <= 0) {
-//            this.idleAnimTimeout = 80;
-//            this.idleAnimState.start(this.tickCount);
-//        } else {
-//            --this.idleAnimTimeout;
-//        }
-//    }
-
     @Override
     public void tick() {
         super.tick();
 
         if(this.level().isClientSide()) {
-//            this.setupAnimationStates();
         }
     }
 }

@@ -1,7 +1,6 @@
 package com.unbound.entities;
 
 /*
-the main class for the smaller goblins
 this is where all of the mod functionality should be, including ai
  */
 
@@ -26,7 +25,14 @@ import net.minecraft.world.level.storage.loot.LootTable;
 public class GoblinKingEntity extends Monster {
 
     public DatabankAnimationState animState = new DatabankEntityAnimationState("idle", this)
-            .addAnim(new DatabankAnimationReference("idle", (state, anim) -> {}, (state, anim) -> {}));
+            .addAnim(new DatabankAnimationReference("idle", (state, anim) -> {}, (state, anim) -> {}))
+            .addAnim(new DatabankAnimationReference("walk", (state, anim) -> {}, (state, anim) -> {}))
+            .addAnim(new DatabankAnimationReference("death", (state, anim) -> {}, (state, anim) -> {}))
+            .addAnim(new DatabankAnimationReference("roar", (state, anim) -> {}, (state, anim) -> {}))
+            .addAnim(new DatabankAnimationReference("jump", (state, anim) -> {}, (state, anim) -> {}))
+            .addAnim(new DatabankAnimationReference("slam", (state, anim) -> {}, (state, anim) -> {}))
+            .addAnim(new DatabankAnimationReference("sweep", (state, anim) -> {}, (state, anim) -> {}))
+            .addAnim(new DatabankAnimationReference("swing", (state, anim) -> {}, (state, anim) -> {}));
 
     private static final ResourceKey<LootTable> LOOT  = ResourceKey.create(Registries.LOOT_TABLE,
             ResourceLocation.fromNamespaceAndPath("bossesunbound", "entities/goblin_king"));
