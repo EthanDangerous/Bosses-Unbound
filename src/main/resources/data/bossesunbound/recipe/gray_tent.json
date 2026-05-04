@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:gray_carpet"
+    },
+    "X": {
+      "tag": "minecraft:fences"
+    },
+    "O": {
+      "item": "minecraft:gray_bed"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#X#",
+    "XOX"
+  ],
+  "result": {
+    "id": "bossesunbound:gray_tent"
+  }
+}

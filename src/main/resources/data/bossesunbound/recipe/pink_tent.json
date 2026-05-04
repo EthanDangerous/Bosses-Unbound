@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:pink_carpet"
+    },
+    "X": {
+      "tag": "minecraft:fences"
+    },
+    "O": {
+      "item": "minecraft:pink_bed"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#X#",
+    "XOX"
+  ],
+  "result": {
+    "id": "bossesunbound:pink_tent"
+  }
+}

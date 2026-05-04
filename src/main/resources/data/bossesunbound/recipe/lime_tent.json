@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:lime_carpet"
+    },
+    "X": {
+      "tag": "minecraft:fences"
+    },
+    "O": {
+      "item": "minecraft:lime_bed"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#X#",
+    "XOX"
+  ],
+  "result": {
+    "id": "bossesunbound:lime_tent"
+  }
+}

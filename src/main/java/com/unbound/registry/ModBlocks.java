@@ -22,8 +22,36 @@ public class ModBlocks {
     public static final Supplier<Block> GOBLIN_TENT = registerBlock("goblin_tent",
             () -> new GoblinTent(DyeColor.WHITE, BlockBehaviour.Properties.ofFullCopy(Blocks.BONE_BLOCK).noOcclusion().noCollission()));
 
-    public static final Supplier<Block> TENT = registerBlock("tent",
+    public static final Supplier<Block> BLACK_TENT = registerBlock("black_tent",
+            () -> new Tent(DyeColor.BLACK, BlockBehaviour.Properties.ofFullCopy(Blocks.BONE_BLOCK).noOcclusion().noCollission()));
+    public static final Supplier<Block> GRAY_TENT = registerBlock("gray_tent",
+            () -> new Tent(DyeColor.GRAY, BlockBehaviour.Properties.ofFullCopy(Blocks.BONE_BLOCK).noOcclusion().noCollission()));
+    public static final Supplier<Block> LIGHT_GRAY_TENT = registerBlock("light_gray_tent",
+            () -> new Tent(DyeColor.LIGHT_GRAY, BlockBehaviour.Properties.ofFullCopy(Blocks.BONE_BLOCK).noOcclusion().noCollission()));
+    public static final Supplier<Block> WHITE_TENT = registerBlock("white_tent",
             () -> new Tent(DyeColor.WHITE, BlockBehaviour.Properties.ofFullCopy(Blocks.BONE_BLOCK).noOcclusion().noCollission()));
+    public static final Supplier<Block> RED_TENT = registerBlock("red_tent",
+            () -> new Tent(DyeColor.RED, BlockBehaviour.Properties.ofFullCopy(Blocks.BONE_BLOCK).noOcclusion().noCollission()));
+    public static final Supplier<Block> ORANGE_TENT = registerBlock("orange_tent",
+            () -> new Tent(DyeColor.ORANGE, BlockBehaviour.Properties.ofFullCopy(Blocks.BONE_BLOCK).noOcclusion().noCollission()));
+    public static final Supplier<Block> YELLOW_TENT = registerBlock("yellow_tent",
+            () -> new Tent(DyeColor.YELLOW, BlockBehaviour.Properties.ofFullCopy(Blocks.BONE_BLOCK).noOcclusion().noCollission()));
+    public static final Supplier<Block> LIME_TENT = registerBlock("lime_tent",
+            () -> new Tent(DyeColor.LIME, BlockBehaviour.Properties.ofFullCopy(Blocks.BONE_BLOCK).noOcclusion().noCollission()));
+    public static final Supplier<Block> GREEN_TENT = registerBlock("green_tent",
+            () -> new Tent(DyeColor.GREEN, BlockBehaviour.Properties.ofFullCopy(Blocks.BONE_BLOCK).noOcclusion().noCollission()));
+    public static final Supplier<Block> CYAN_TENT = registerBlock("cyan_tent",
+            () -> new Tent(DyeColor.CYAN, BlockBehaviour.Properties.ofFullCopy(Blocks.BONE_BLOCK).noOcclusion().noCollission()));
+    public static final Supplier<Block> LIGHT_BLUE_TENT = registerBlock("light_blue_tent",
+            () -> new Tent(DyeColor.LIGHT_BLUE, BlockBehaviour.Properties.ofFullCopy(Blocks.BONE_BLOCK).noOcclusion().noCollission()));
+    public static final Supplier<Block> BLUE_TENT = registerBlock("blue_tent",
+            () -> new Tent(DyeColor.BLUE, BlockBehaviour.Properties.ofFullCopy(Blocks.BONE_BLOCK).noOcclusion().noCollission()));
+    public static final Supplier<Block> PURPLE_TENT = registerBlock("purple_tent",
+            () -> new Tent(DyeColor.PURPLE, BlockBehaviour.Properties.ofFullCopy(Blocks.BONE_BLOCK).noOcclusion().noCollission()));
+    public static final Supplier<Block> MAGENTA_TENT = registerBlock("magenta_tent",
+            () -> new Tent(DyeColor.MAGENTA, BlockBehaviour.Properties.ofFullCopy(Blocks.BONE_BLOCK).noOcclusion().noCollission()));
+    public static final Supplier<Block> PINK_TENT = registerBlock("pink_tent",
+            () -> new Tent(DyeColor.PINK, BlockBehaviour.Properties.ofFullCopy(Blocks.BONE_BLOCK).noOcclusion().noCollission()));
 
     public static void register(IEventBus bus){
         BLOCKS.register(bus);

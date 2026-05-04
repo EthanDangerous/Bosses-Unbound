@@ -9,12 +9,14 @@ import com.mojang.math.Axis;
 import com.unbound.BossesUnbound;
 import com.unbound.block.GoblinTent;
 import com.unbound.blockentity.GoblinTentBlockEntity;
+import com.unbound.blockentity.TentBlockEntity;
 import net.minecraft.client.animation.AnimationDefinition;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.state.properties.BedPart;
+import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 
 import static net.minecraft.world.level.block.BedBlock.PART;
@@ -22,6 +24,11 @@ import static net.minecraft.world.level.block.BedBlock.PART;
 public class GoblinTentRenderer extends DatabankBlockEntityRenderer<GoblinTentBlockEntity> {
     public GoblinTentRenderer(BlockEntityRendererProvider.Context rendererProvider) {
         super(new Model());
+    }
+
+    @Override
+    public AABB getRenderBoundingBox(GoblinTentBlockEntity blockEntity) {
+        return AABB.INFINITE;
     }
 
     @Override

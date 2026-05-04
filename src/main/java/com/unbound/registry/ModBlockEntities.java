@@ -24,7 +24,22 @@ public class ModBlockEntities {
     public static final Supplier<BlockEntityType<TentBlockEntity>> TENT =
             register("tent", () ->
                     BlockEntityType.Builder.of(TentBlockEntity::new,
-                            ModBlocks.TENT.get()).build(null));
+                            ModBlocks.BLACK_TENT.get(),
+                            ModBlocks.GRAY_TENT.get(),
+                            ModBlocks.LIGHT_GRAY_TENT.get(),
+                            ModBlocks.WHITE_TENT.get(),
+                            ModBlocks.RED_TENT.get(),
+                            ModBlocks.ORANGE_TENT.get(),
+                            ModBlocks.YELLOW_TENT.get(),
+                            ModBlocks.LIME_TENT.get(),
+                            ModBlocks.GREEN_TENT.get(),
+                            ModBlocks.CYAN_TENT.get(),
+                            ModBlocks.LIGHT_BLUE_TENT.get(),
+                            ModBlocks.BLUE_TENT.get(),
+                            ModBlocks.PURPLE_TENT.get(),
+                            ModBlocks.MAGENTA_TENT.get(),
+                            ModBlocks.PINK_TENT.get()
+                    ).build(null));
 
     public static void register(IEventBus bus){
         BLOCK_ENTITIES.register(bus);

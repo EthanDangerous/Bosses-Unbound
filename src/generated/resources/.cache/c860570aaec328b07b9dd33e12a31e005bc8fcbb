@@ -1,8 +1,22 @@
-// 1.21.1	2026-05-02T22:35:22.9422918	Item Models: bossesunbound
+// 1.21.1	2026-05-03T17:08:54.1966101	Item Models: bossesunbound
+ffc1742d01a8d69f5fcce6a31187a6441767a822 assets/bossesunbound/models/item/black_tent.json
+334c8c72ed06ce7cd1aeeb06f3f0e927bfce4ead assets/bossesunbound/models/item/blue_tent.json
+336e294f977b521dec21738dee5d8fe557ed229f assets/bossesunbound/models/item/cyan_tent.json
 806c67cb288cfd708b32c35beecb3ca71a912726 assets/bossesunbound/models/item/goblin_dagger.json
 514fac08dc74280dec52cb26910e5fc0a229c254 assets/bossesunbound/models/item/goblin_hatchet.json
 cd604423088f6e6a1f639aa9f6c7f7fbe897a4f0 assets/bossesunbound/models/item/goblin_king_spawn_egg.json
 17ff7784a205a3fc2e59dcb09cae3d675f9ca4fe assets/bossesunbound/models/item/goblin_spawn_egg.json
 434c5c038d37c6e019eae2de33cc313b273da99d assets/bossesunbound/models/item/goblin_tent.json
+5692ae5c777c05db9e94e85dc5ce4ecf543cfa0f assets/bossesunbound/models/item/gray_tent.json
+ff4baca08f14b4c85ec33a7c05de7f90d5500a3e assets/bossesunbound/models/item/green_tent.json
 a9a36bd23a0292c5ca83c700b2565a11bbabad2c assets/bossesunbound/models/item/kings_mace.json
-4d4918f7ebe0fde4775e87216ba5aec620124f33 assets/bossesunbound/models/item/tent.json
+f97dbf2a8c596fe32c32cd48ca3fdd5c0d165f74 assets/bossesunbound/models/item/light_blue_tent.json
+51900b13be185ebf090f7dbfdb638671c7c150d2 assets/bossesunbound/models/item/light_gray_tent.json
+18866d116aab9721caaa1366ab33a356e65233e4 assets/bossesunbound/models/item/lime_tent.json
+91296fb6609e4fc5b0cd89cf70d6e430f6c93d0f assets/bossesunbound/models/item/magenta_tent.json
+5b97515245f9a7216a711267a5ee676fe1af17c5 assets/bossesunbound/models/item/orange_tent.json
+f455aa4c792f54ad895274a39e4d45450c49545b assets/bossesunbound/models/item/pink_tent.json
+ccfde2a2d6bcf10953b2b4cd661582b6a0da29b7 assets/bossesunbound/models/item/purple_tent.json
+1591cc41b607192eaec7fb9ab4bf3513a09998d2 assets/bossesunbound/models/item/red_tent.json
+6b21fdf63027a46b946ebcb90609bff9105d806d assets/bossesunbound/models/item/white_tent.json
+f2d34bb30394141bfd00a263841b4b30bd017528 assets/bossesunbound/models/item/yellow_tent.json

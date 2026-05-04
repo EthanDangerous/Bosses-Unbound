@@ -68,7 +68,21 @@ public class BossesUnbound {
         output.accept(ModItems.GOBLIN_SPAWN_EGG.get());
         output.accept(ModItems.GOBLIN_KING_SPAWN_EGG.get());// Add the example item to the tab. For your own tabs, this method is preferred over the event
         output.accept(ModItems.GOBLIN_TENT.get());
-        output.accept(ModItems.TENT.get());
+        output.accept(ModItems.BLACK_TENT.get());
+        output.accept(ModItems.GRAY_TENT.get());
+        output.accept(ModItems.LIGHT_GRAY_TENT.get());
+        output.accept(ModItems.WHITE_TENT.get());
+        output.accept(ModItems.RED_TENT.get());
+        output.accept(ModItems.ORANGE_TENT.get());
+        output.accept(ModItems.YELLOW_TENT.get());
+        output.accept(ModItems.LIME_TENT.get());
+        output.accept(ModItems.GREEN_TENT.get());
+        output.accept(ModItems.CYAN_TENT.get());
+        output.accept(ModItems.LIGHT_BLUE_TENT.get());
+        output.accept(ModItems.BLUE_TENT.get());
+        output.accept(ModItems.PURPLE_TENT.get());
+        output.accept(ModItems.MAGENTA_TENT.get());
+        output.accept(ModItems.PINK_TENT.get());
     }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.

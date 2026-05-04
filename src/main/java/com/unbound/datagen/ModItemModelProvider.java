@@ -20,10 +20,26 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.KINGS_MACE.get().asItem());
         handheldItem(ModItems.GOBLIN_HATCHET.get().asItem());
         handheldItem(ModItems.GOBLIN_DAGGER.get().asItem());
+
         basicItem(ModItems.GOBLIN_SPAWN_EGG.get().asItem());
         basicItem(ModItems.GOBLIN_KING_SPAWN_EGG.get().asItem());
+
         basicItem(ModBlocks.GOBLIN_TENT.get().asItem());
-        basicItem(ModBlocks.TENT.get().asItem());
+        basicItem(ModBlocks.BLACK_TENT.get().asItem());
+        basicItem(ModBlocks.GRAY_TENT.get().asItem());
+        basicItem(ModBlocks.LIGHT_GRAY_TENT.get().asItem());
+        basicItem(ModBlocks.WHITE_TENT.get().asItem());
+        basicItem(ModBlocks.RED_TENT.get().asItem());
+        basicItem(ModBlocks.ORANGE_TENT.get().asItem());
+        basicItem(ModBlocks.YELLOW_TENT.get().asItem());
+        basicItem(ModBlocks.LIME_TENT.get().asItem());
+        basicItem(ModBlocks.GREEN_TENT.get().asItem());
+        basicItem(ModBlocks.CYAN_TENT.get().asItem());
+        basicItem(ModBlocks.LIGHT_BLUE_TENT.get().asItem());
+        basicItem(ModBlocks.BLUE_TENT.get().asItem());
+        basicItem(ModBlocks.PURPLE_TENT.get().asItem());
+        basicItem(ModBlocks.MAGENTA_TENT.get().asItem());
+        basicItem(ModBlocks.PINK_TENT.get().asItem());
     }
 
 //    private ItemModelBuilder handheldItem(DeferredItem<?> item) {
