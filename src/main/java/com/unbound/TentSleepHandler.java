@@ -1,6 +1,7 @@
 package com.unbound;
 
 import com.unbound.blockentity.TentBlockEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -13,7 +14,9 @@ public class TentSleepHandler {
         BlockEntity be = event.getEntity().level().getBlockEntity(event.getPos());
 
         if (be instanceof TentBlockEntity) {
-            event.setProblem(null);
+            if (event.getProblem() == Player.BedSleepingProblem.NOT_SAFE) {
+                event.setProblem(null);
+            }
         }
     }
 }
