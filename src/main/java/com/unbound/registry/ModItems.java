@@ -36,6 +36,7 @@ public class ModItems {
     public static final DeferredItem<BlockItem> PURPLE_TENT = ITEMS.registerSimpleBlockItem("purple_tent", ModBlocks.PURPLE_TENT);
     public static final DeferredItem<BlockItem> MAGENTA_TENT = ITEMS.registerSimpleBlockItem("magenta_tent", ModBlocks.MAGENTA_TENT);
     public static final DeferredItem<BlockItem> PINK_TENT = ITEMS.registerSimpleBlockItem("pink_tent", ModBlocks.PINK_TENT);
+    public static final DeferredItem<BlockItem> BROWN_TENT = ITEMS.registerSimpleBlockItem("brown_tent", ModBlocks.BROWN_TENT);
 
 
     public static final DeferredItem<MaceItem> KINGS_MACE = ITEMS.register("kings_mace",

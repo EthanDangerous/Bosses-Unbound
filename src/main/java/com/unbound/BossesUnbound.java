@@ -83,6 +83,7 @@ public class BossesUnbound {
         output.accept(ModItems.PURPLE_TENT.get());
         output.accept(ModItems.MAGENTA_TENT.get());
         output.accept(ModItems.PINK_TENT.get());
+        output.accept(ModItems.BROWN_TENT.get());
     }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.

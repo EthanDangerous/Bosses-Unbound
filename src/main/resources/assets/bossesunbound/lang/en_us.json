@@ -25,6 +25,7 @@
   "block.bossesunbound.purple_tent": "Purple Tent",
   "block.bossesunbound.magenta_tent": "Magenta Tent",
   "block.bossesunbound.pink_tent": "Pink Tent",
+  "block.bossesunbound.brown_tent": "Brown Tent",
   "item.bossesunbound.goblin_tent": "Goblin Tent",
   "item.bossesunbound.black_tent": "Black Tent",
   "item.bossesunbound.gray_tent": "Gray Tent",
@@ -40,5 +41,6 @@
   "item.bossesunbound.blue_tent": "Blue Tent",
   "item.bossesunbound.purple_tent": "Purple Tent",
   "item.bossesunbound.magenta_tent": "Magenta Tent",
-  "item.bossesunbound.pink_tent": "Pink Tent"
+  "item.bossesunbound.pink_tent": "Pink Tent",
+  "item.bossesunbound.brown_tent": "Brown Tent"
 }

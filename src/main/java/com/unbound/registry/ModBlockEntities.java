@@ -38,7 +38,8 @@ public class ModBlockEntities {
                             ModBlocks.BLUE_TENT.get(),
                             ModBlocks.PURPLE_TENT.get(),
                             ModBlocks.MAGENTA_TENT.get(),
-                            ModBlocks.PINK_TENT.get()
+                            ModBlocks.PINK_TENT.get(),
+                            ModBlocks.BROWN_TENT.get()
                     ).build(null));
 
     public static void register(IEventBus bus){

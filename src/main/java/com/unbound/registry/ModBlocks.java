@@ -52,6 +52,8 @@ public class ModBlocks {
             () -> new Tent(DyeColor.MAGENTA, BlockBehaviour.Properties.ofFullCopy(Blocks.BONE_BLOCK).noOcclusion().noCollission()));
     public static final Supplier<Block> PINK_TENT = registerBlock("pink_tent",
             () -> new Tent(DyeColor.PINK, BlockBehaviour.Properties.ofFullCopy(Blocks.BONE_BLOCK).noOcclusion().noCollission()));
+    public static final Supplier<Block> BROWN_TENT = registerBlock("brown_tent",
+            () -> new Tent(DyeColor.BROWN, BlockBehaviour.Properties.ofFullCopy(Blocks.BONE_BLOCK).noOcclusion().noCollission()));
 
     public static void register(IEventBus bus){
         BLOCKS.register(bus);

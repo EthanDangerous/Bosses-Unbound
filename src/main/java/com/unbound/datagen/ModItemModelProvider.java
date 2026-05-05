@@ -40,6 +40,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModBlocks.PURPLE_TENT.get().asItem());
         basicItem(ModBlocks.MAGENTA_TENT.get().asItem());
         basicItem(ModBlocks.PINK_TENT.get().asItem());
+        basicItem(ModBlocks.BROWN_TENT.get().asItem());
     }
 
 //    private ItemModelBuilder handheldItem(DeferredItem<?> item) {
