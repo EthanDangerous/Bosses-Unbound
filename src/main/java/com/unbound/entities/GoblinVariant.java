@@ -6,10 +6,11 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public enum GoblinVariant {
-    DEFAULT(0, 50),
+    DEFAULT(0, 30),
     TRAVELER(1, 10),
     ARMORED(2, 20),
-    SLINGER(3, 20);
+    SLINGER(3, 20),
+    FARMER(4, 20);
 
     private static final GoblinVariant[] BY_ID = Arrays.stream(values()).sorted(
             Comparator.comparingInt(GoblinVariant::getId)).toArray(GoblinVariant[]::new);

@@ -25,6 +25,7 @@ public class GoblinRenderer extends DatabankLivingEntityRenderer<GoblinEntity> {
     public TravelerModel travelerModel;
     public ArmoredModel armoredModel;
     public SlingerModel slingerModel;
+    public FarmerModel farmerModel;
 
 //    private static final Map<GoblinVariant, ResourceLocation> LOCATION_BY_VARIANT =
 //            Util.make(Maps.newEnumMap(GoblinVariant.class), map -> {
@@ -41,6 +42,7 @@ public class GoblinRenderer extends DatabankLivingEntityRenderer<GoblinEntity> {
             map.put(GoblinVariant.TRAVELER, "textures/entity/goblin/goblin_traveler.png");
             map.put(GoblinVariant.ARMORED, "textures/entity/goblin/goblin_armored.png");
             map.put(GoblinVariant.SLINGER, "textures/entity/goblin/goblin_slinger.png");
+            map.put(GoblinVariant.FARMER, "textures/entity/goblin/goblin_farmer.png");
         });
 
 //        this.addLayer(new ItemInHandLayer<>(this, context.getItemInHandRenderer()));
@@ -52,6 +54,7 @@ public class GoblinRenderer extends DatabankLivingEntityRenderer<GoblinEntity> {
         this.travelerModel = new TravelerModel();
         this.armoredModel = new ArmoredModel();
         this.slingerModel = new SlingerModel();
+        this.farmerModel = new FarmerModel();
     }
 
     @Override
@@ -63,6 +66,8 @@ public class GoblinRenderer extends DatabankLivingEntityRenderer<GoblinEntity> {
                 return armoredModel;
             case GoblinVariant.SLINGER:
                 return slingerModel;
+            case GoblinVariant.FARMER:
+                return farmerModel;
             default:
                 return defaultModel;
         }
@@ -139,6 +144,13 @@ public class GoblinRenderer extends DatabankLivingEntityRenderer<GoblinEntity> {
         @Override
         public ResourceLocation getTextureLocation() {
             return BossesUnbound.locate("textures/entity/goblin/goblin_slinger.png");
+        }
+    }
+
+    public static class FarmerModel extends DefaultModel {
+        @Override
+        public ResourceLocation getTextureLocation() {
+            return BossesUnbound.locate("textures/entity/goblin/goblin_farmer.png");
         }
     }
 }

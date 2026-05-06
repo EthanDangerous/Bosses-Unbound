@@ -1,5 +1,4 @@
 package com.unbound.entities;
-
 /*
 the main class for the smaller goblins
 this is where all of the mod functionality should be, including ai
@@ -42,7 +41,8 @@ public class GoblinEntity extends Monster {
     public DatabankAnimationState animState = new DatabankEntityAnimationState("idle", this)
             .addAnim(new DatabankAnimationReference("idle", (state, anim) -> {}, (state, anim) -> {}))
             .addAnim(new DatabankAnimationReference("walk", (state, anim) -> {}, (state, anim) -> {}))
-            .addAnim(new DatabankAnimationReference("attack", (state, anim) -> {}, (state, anim) -> {}));
+            .addAnim(new DatabankAnimationReference("attack", (state, anim) -> {}, (state, anim) -> {}))
+            .addAnim(new DatabankAnimationReference("slingshot", (state, anim) -> {}, (state, anim) -> {}));
 
     public GoblinEntity(EntityType<? extends Monster> entityType, Level level) {
         super(entityType, level);
