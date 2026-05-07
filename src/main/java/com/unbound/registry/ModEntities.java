@@ -8,6 +8,7 @@ any time we want to tell the game that we are adding a new mob, we would do so h
 import com.unbound.BossesUnbound;
 import com.unbound.entities.GoblinEntity;
 import com.unbound.entities.GoblinKingEntity;
+import com.unbound.entities.HobgoblinEntity;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -35,6 +36,10 @@ public class ModEntities {
     public static final Supplier<EntityType<GoblinKingEntity>> GOBLIN_KING =
             ENTITY_TYPES.register("goblin_king", () -> EntityType.Builder.of(GoblinKingEntity::new, MobCategory.MONSTER)
                     .sized(1.3f, 2.2f).build("goblin_king"));
+
+    public static final Supplier<EntityType<HobgoblinEntity>> HOBGOBLIN =
+            ENTITY_TYPES.register("hobgoblin", () -> EntityType.Builder.of(HobgoblinEntity::new, MobCategory.MONSTER)
+                    .sized(1.0f, 2.0f).build("hobgoblin"));
 
 
     // all of the entities that are created above will be registered in one action with the method below

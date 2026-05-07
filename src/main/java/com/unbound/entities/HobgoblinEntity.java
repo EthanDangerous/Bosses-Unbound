@@ -10,7 +10,7 @@ import com.cmdpro.databank.model.animation.DatabankEntityAnimationState;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.*;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.control.BodyRotationControl;
@@ -22,22 +22,16 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.storage.loot.LootTable;
 
-public class GoblinKingEntity extends Monster {
+public class HobgoblinEntity extends Monster {
 
     public DatabankAnimationState animState = new DatabankEntityAnimationState("idle", this)
-            .addAnim(new DatabankAnimationReference("idle", (state, anim) -> {}, (state, anim) -> {}))
-            .addAnim(new DatabankAnimationReference("walk", (state, anim) -> {}, (state, anim) -> {}))
-            .addAnim(new DatabankAnimationReference("death", (state, anim) -> {}, (state, anim) -> {}))
-            .addAnim(new DatabankAnimationReference("roar", (state, anim) -> {}, (state, anim) -> {}))
-            .addAnim(new DatabankAnimationReference("jump", (state, anim) -> {}, (state, anim) -> {}))
-            .addAnim(new DatabankAnimationReference("slam", (state, anim) -> {}, (state, anim) -> {}))
-            .addAnim(new DatabankAnimationReference("sweep", (state, anim) -> {}, (state, anim) -> {}))
-            .addAnim(new DatabankAnimationReference("swing", (state, anim) -> {}, (state, anim) -> {}));
+            .addAnim(new DatabankAnimationReference("attack", (state, anim) -> {}, (state, anim) -> {}))
+            .addAnim(new DatabankAnimationReference("walk", (state, anim) -> {}, (state, anim) -> {}));
 
     private static final ResourceKey<LootTable> LOOT  = ResourceKey.create(Registries.LOOT_TABLE,
-            ResourceLocation.fromNamespaceAndPath("bossesunbound", "entities/goblin_king"));
+            ResourceLocation.fromNamespaceAndPath("bossesunbound", "entities/goblin_default"));
 
-    public GoblinKingEntity(EntityType<? extends Monster> entityType, Level level) {
+    public HobgoblinEntity(EntityType<? extends Monster> entityType, Level level) {
         super(entityType, level);
         animState.setLevel(level);
     }
@@ -67,12 +61,12 @@ public class GoblinKingEntity extends Monster {
     public static AttributeSupplier.Builder createAttributes(){
         // these are just your simple entity attributes, which you can add many of. check the attributes class to see the full list
         return Monster.createLivingAttributes()
-                .add(Attributes.MAX_HEALTH, 60d)
+                .add(Attributes.MAX_HEALTH, 20d)
                 .add(Attributes.MOVEMENT_SPEED, 0.20D)
                 .add(Attributes.ATTACK_SPEED)
-                .add(Attributes.ATTACK_DAMAGE, 16D)
-                .add(Attributes.ARMOR, 12D)
-                .add(Attributes.KNOCKBACK_RESISTANCE, 1D)
+                .add(Attributes.ATTACK_DAMAGE, 6D)
+                .add(Attributes.ARMOR, 8D)
+                .add(Attributes.KNOCKBACK_RESISTANCE, 0.2D)
                 .add(Attributes.FOLLOW_RANGE, 40D);
     }
 

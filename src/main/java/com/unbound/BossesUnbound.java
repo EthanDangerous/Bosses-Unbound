@@ -7,6 +7,7 @@ import com.unbound.registry.ModEntities;
 import com.unbound.renderers.GoblinKingRenderer;
 import com.unbound.registry.ModItems;
 import com.unbound.renderers.GoblinRenderer;
+import com.unbound.renderers.HobgoblinRenderer;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -159,6 +160,7 @@ public class BossesUnbound {
         public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
             event.registerEntityRenderer(ModEntities.GOBLIN.get(), GoblinRenderer::new);
             event.registerEntityRenderer(ModEntities.GOBLIN_KING.get(), GoblinKingRenderer::new);
+            event.registerEntityRenderer(ModEntities.HOBGOBLIN.get(), HobgoblinRenderer::new);
         }
 
         public static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
