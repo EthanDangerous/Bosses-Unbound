@@ -10,6 +10,8 @@ import com.cmdpro.databank.model.animation.DatabankEntityAnimationState;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.effect.MobEffectUtil;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -40,6 +42,19 @@ public class GoblinKingEntity extends Monster {
     public GoblinKingEntity(EntityType<? extends Monster> entityType, Level level) {
         super(entityType, level);
         animState.setLevel(level);
+    }
+
+//    @Override
+//    public int getCurrentSwingDuration() {
+//        if (MobEffectUtil.hasDigSpeed(this)) {
+//            return (6 - (1 + MobEffectUtil.getDigSpeedAmplification(this)))*2;
+//        } else {
+//            return (this.hasEffect(MobEffects.DIG_SLOWDOWN) ? 6 + (1 + this.getEffect(MobEffects.DIG_SLOWDOWN).getAmplifier()) * 2 : 6)*2;
+//        }
+//    }
+
+    public int getCurrentSwingDuration() {
+        return super.getCurrentSwingDuration() * 8;
     }
 
     // the method that grabs the correct loot table for any variant

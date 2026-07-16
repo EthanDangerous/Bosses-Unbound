@@ -19,6 +19,10 @@ public class ModItems {
             () -> new SpawnEggItem(ModEntities.GOBLIN.get(), 0xffffff, 0xffffff, new Item.Properties()));
     public static final DeferredItem<SpawnEggItem> GOBLIN_KING_SPAWN_EGG = ITEMS.register("goblin_king_spawn_egg",
             () -> new SpawnEggItem(ModEntities.GOBLIN_KING.get(), 0xffffff, 0xffffff, new Item.Properties()));
+    public static final DeferredItem<SpawnEggItem> HOBGOBLIN_SPAWN_EGG = ITEMS.register("hobgoblin_spawn_egg",
+            () -> new SpawnEggItem(ModEntities.HOBGOBLIN.get(), 0xffffff, 0xffffff, new Item.Properties()));
+    public static final DeferredItem<SpawnEggItem> HOBHOG_SPAWN_EGG = ITEMS.register("hobhog_spawn_egg",
+            () -> new SpawnEggItem(ModEntities.HOBHOG.get(), 0xffffff, 0xffffff, new Item.Properties()));
 
     public static final DeferredItem<BlockItem> GOBLIN_TENT = ITEMS.registerSimpleBlockItem("goblin_tent", ModBlocks.GOBLIN_TENT);
     public static final DeferredItem<BlockItem> BLACK_TENT = ITEMS.registerSimpleBlockItem("black_tent", ModBlocks.BLACK_TENT);

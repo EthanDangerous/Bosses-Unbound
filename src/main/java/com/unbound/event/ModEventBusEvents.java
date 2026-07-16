@@ -2,6 +2,7 @@ package com.unbound.event;
 
 import com.unbound.BossesUnbound;
 import com.unbound.entities.HobgoblinEntity;
+import com.unbound.entities.HobhogEntity;
 import com.unbound.registry.ModBlockEntities;
 import com.unbound.registry.ModEntities;
 import com.unbound.renderers.GoblinRenderer;
@@ -37,5 +38,6 @@ public class ModEventBusEvents {
         event.put(ModEntities.GOBLIN.get(), GoblinEntity.createAttributes().build());
         event.put(ModEntities.GOBLIN_KING.get(), GoblinKingEntity.createAttributes().build());
         event.put(ModEntities.HOBGOBLIN.get(), HobgoblinEntity.createAttributes().build());
+        event.put(ModEntities.HOBHOG.get(), HobhogEntity.createAttributes().build());
     }
 }

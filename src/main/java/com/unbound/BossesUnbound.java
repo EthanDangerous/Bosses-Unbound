@@ -8,6 +8,7 @@ import com.unbound.renderers.GoblinKingRenderer;
 import com.unbound.registry.ModItems;
 import com.unbound.renderers.GoblinRenderer;
 import com.unbound.renderers.HobgoblinRenderer;
+import com.unbound.renderers.HobhogRenderer;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -68,6 +69,8 @@ public class BossesUnbound {
         output.accept(ModItems.GOBLIN_HATCHET.get());
         output.accept(ModItems.GOBLIN_SPAWN_EGG.get());
         output.accept(ModItems.GOBLIN_KING_SPAWN_EGG.get());// Add the example item to the tab. For your own tabs, this method is preferred over the event
+        output.accept(ModItems.HOBGOBLIN_SPAWN_EGG.get());
+        output.accept(ModItems.HOBHOG_SPAWN_EGG.get());
         output.accept(ModItems.GOBLIN_TENT.get());
         output.accept(ModItems.BLACK_TENT.get());
         output.accept(ModItems.GRAY_TENT.get());
@@ -161,6 +164,7 @@ public class BossesUnbound {
             event.registerEntityRenderer(ModEntities.GOBLIN.get(), GoblinRenderer::new);
             event.registerEntityRenderer(ModEntities.GOBLIN_KING.get(), GoblinKingRenderer::new);
             event.registerEntityRenderer(ModEntities.HOBGOBLIN.get(), HobgoblinRenderer::new);
+            event.registerEntityRenderer(ModEntities.HOBHOG.get(), HobhogRenderer::new);
         }
 
         public static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {

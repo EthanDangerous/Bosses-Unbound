@@ -7,63 +7,56 @@ import com.cmdpro.databank.model.entity.DatabankLivingEntityModel;
 import com.cmdpro.databank.model.entity.DatabankLivingEntityRenderer;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.unbound.BossesUnbound;
-import com.unbound.entities.GoblinEntity;
 import com.unbound.entities.GoblinKingEntity;
-//import com.unbound.entities.client.GoblinKingModel;
+import com.unbound.entities.HobhogEntity;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
-import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.world.phys.Vec2;
 
-public class GoblinKingRenderer extends DatabankLivingEntityRenderer<GoblinKingEntity> {
+public class HobhogRenderer extends DatabankLivingEntityRenderer<HobhogEntity> {
 
-    public GoblinKingRenderer(EntityRendererProvider.Context context) {
+    public HobhogRenderer(EntityRendererProvider.Context context) {
         super(context, new Model(), 0.25f);
     }
 
     @Override
-    public ResourceLocation getTextureLocation(GoblinKingEntity goblinKingEntity) {
+    public ResourceLocation getTextureLocation(HobhogEntity goblinKingEntity) {
         return ResourceLocation.fromNamespaceAndPath(BossesUnbound.MOD_ID, "textures/entity/goblin_king/goblin_king.png");
     }
 
 
     @Override
-    public void render(GoblinKingEntity entity, float entityYaw, float partialTicks, PoseStack poseStack, MultiBufferSource buffer, int packedLight) {
+    public void render(HobhogEntity entity, float entityYaw, float partialTicks, PoseStack poseStack, MultiBufferSource buffer, int packedLight) {
         poseStack.scale(1f, 1f, 1f);
 
         super.render(entity, entityYaw, partialTicks, poseStack, buffer, packedLight);
     }
 
-    public static class Model extends DatabankLivingEntityModel<GoblinKingEntity> {
+    public static class Model extends DatabankLivingEntityModel<HobhogEntity> {
         public DatabankModel model;
 
         public DatabankModel getModel() {
             if (model == null) {
-                model = DatabankModels.models.get(BossesUnbound.locate("goblin_king"));
+                model = DatabankModels.models.get(BossesUnbound.locate("hobhog"));
             }
             return model;
         }
 
         @Override
         public ResourceLocation getTextureLocation() {
-            return BossesUnbound.locate("textures/entity/goblin_king/goblin_king.png");
+            return BossesUnbound.locate("textures/entity/hobhog/hobhog.png");
         }
 
-
-
         @Override
-        public void setupModelPose(GoblinKingEntity pEntity, float partialTick) {
+        public void setupModelPose(HobhogEntity pEntity, float partialTick) {
             pEntity.animState.updateAnimDefinitions(getModel());
             DatabankAnimationState state = pEntity.animState;
 
             double speed = pEntity.getDeltaMovement().horizontalDistanceSqr();
-            float attack = pEntity.getAttackAnim(partialTick);
 
-            if (attack > 0.0F) {
-                state.setAnim("swing");
-            } else if (speed > 0) {
+            if (speed > 0) {
                 state.setAnim("walk");
             } else {
                 state.setAnim("idle");

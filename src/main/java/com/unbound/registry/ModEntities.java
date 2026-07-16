@@ -9,6 +9,7 @@ import com.unbound.BossesUnbound;
 import com.unbound.entities.GoblinEntity;
 import com.unbound.entities.GoblinKingEntity;
 import com.unbound.entities.HobgoblinEntity;
+import com.unbound.entities.HobhogEntity;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -40,6 +41,10 @@ public class ModEntities {
     public static final Supplier<EntityType<HobgoblinEntity>> HOBGOBLIN =
             ENTITY_TYPES.register("hobgoblin", () -> EntityType.Builder.of(HobgoblinEntity::new, MobCategory.MONSTER)
                     .sized(1.0f, 2.0f).build("hobgoblin"));
+
+    public static final Supplier<EntityType<HobhogEntity>> HOBHOG =
+            ENTITY_TYPES.register("hobhog", () -> EntityType.Builder.of(HobhogEntity::new, MobCategory.MONSTER)
+                    .sized(1.4f, 1.4f).build("hobhog"));
 
 
     // all of the entities that are created above will be registered in one action with the method below
